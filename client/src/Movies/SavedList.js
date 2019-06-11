@@ -19,9 +19,14 @@ export default class SavedList extends Component {
 						{movie.title}
 					</Link>
 				))}
-				<Link to="/" className="home-button">
-					Home
-				</Link>
+				<div className="listButtons">
+					<Link to="/" className="home-button">
+						Home
+					</Link>
+					<div onClick={this.props.clearList} className="home-button">
+						Clear
+					</div>
+				</div>
 			</div>
 		);
 	}
